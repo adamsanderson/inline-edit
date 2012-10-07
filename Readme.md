@@ -22,3 +22,7 @@ Unlike a normal input, these elements will not be submitted with a form post.
     
 ## License 
 MIT
+
+---
+
+Adam Sanderson - http://monkeyandcrow.com

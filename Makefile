@@ -9,3 +9,4 @@ clean:
 	rm -fr build components template.js
 
 .PHONY: clean
+.PHONY: demo
