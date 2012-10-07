@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title>Inline Edit</title>
+  	
+  	<meta name="author" content="Adam Sanderson">
+  	<link rel="stylesheet" href="build/build.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <h1><input id='header' value='Inline Edit Component'></h1>
+    <p id='content'>
+      This content is an editable paragraph.
+    </p>
+  </body>
+  <script src="build/build.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    var inlineEdit = require('inline-edit');
+    var events     = require('component-event');
+    
+    inlineEdit(document.getElementById('header'));
+    inlineEdit(document.getElementById('content'));
+    events.bind(document, 'change', function(event){
+      console.log('CHANGE', event);
+    });
+  </script>
+</html>

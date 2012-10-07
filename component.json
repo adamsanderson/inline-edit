@@ -1,0 +1,14 @@
+{
+  "name": "inline-edit",
+  "repo": "adamsanderson/inline-edit",
+  "description": "Simple inline editing",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/event": "*"
+  },
+  "development": {},
+
+  "scripts": ["index.js"],
+  "styles": ["inline-edit.css"]
+}
