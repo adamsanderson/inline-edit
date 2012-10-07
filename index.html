@@ -19,18 +19,18 @@
     <p id='content'>
       This content is editable. Check your development console to see change events that are fired.
     </p>
+    <script src="build/build.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      var inlineEdit = require('inline-edit');
+      var events     = require('component-event');
+    
+      inlineEdit(document.getElementById('header'));
+      inlineEdit(document.getElementById('content'));
+    
+      events.bind(document, 'change', function(event){
+        console.log('change event triggered:', event);
+        console.log('new value', event.target.value);
+      });
+    </script>
   </body>
-  <script src="build/build.js" type="text/javascript" charset="utf-8"></script>
-  <script>
-    var inlineEdit = require('inline-edit');
-    var events     = require('component-event');
-    
-    inlineEdit(document.getElementById('header'));
-    inlineEdit(document.getElementById('content'));
-    
-    events.bind(document, 'change', function(event){
-      console.log('change event triggered:', event);
-      console.log('new value', event.target.value);
-    });
-  </script>
 </html>
