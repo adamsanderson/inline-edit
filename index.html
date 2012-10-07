@@ -7,11 +7,17 @@
   	
   	<meta name="author" content="Adam Sanderson">
   	<link rel="stylesheet" href="build/build.css" type="text/css" media="screen" charset="utf-8">
+    <style type="text/css" media="screen">
+      body {
+        padding: 20px;
+        font-family: sans-serif;
+      }
+    </style>
   </head>
   <body>
     <h1><input id='header' value='Inline Edit Component'></h1>
     <p id='content'>
-      This content is an editable paragraph.
+      This content is editable. Check your development console to see change events that are fired.
     </p>
   </body>
   <script src="build/build.js" type="text/javascript" charset="utf-8"></script>
@@ -21,8 +27,10 @@
     
     inlineEdit(document.getElementById('header'));
     inlineEdit(document.getElementById('content'));
+    
     events.bind(document, 'change', function(event){
-      console.log('CHANGE', event);
+      console.log('change event triggered:', event);
+      console.log('new value', event.target.value);
     });
   </script>
 </html>
