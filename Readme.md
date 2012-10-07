@@ -2,6 +2,14 @@
 
 Make any element editable.  If the element is already an input it will just be styled to blend in with the page, otherwise it will be made editable, and start firing events as if it were an input.
 
+See the [demo](http://adamsanderson.github.com/inline-edit/) for a simple example.
+
+## Installation
+ 
+    component install adamsanderson/inline-edit
+
+See [component](https://github.com/component/component#component) for more information.
+
 ## API
 
 ### inlineEdit(el)

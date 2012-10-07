@@ -11,14 +11,25 @@
       body {
         padding: 20px;
         font-family: sans-serif;
+        background: white;
+      }
+      
+      footer {
+        position: fixed;
+        bottom: 20px;
+        background: white;
       }
     </style>
   </head>
   <body>
     <h1><input id='header' value='Inline Edit Component'></h1>
     <p id='content'>
+      This is a demo of the inline-edit component.
       This content is editable. Check your development console to see change events that are fired.
     </p>
+    <footer>
+      See the <a href='https://github.com/adamsanderson/inline-edit/'>GitHub repository</a> for more information.
+    </footer>
     <script src="build/build.js" type="text/javascript" charset="utf-8"></script>
     <script>
       var inlineEdit = require('inline-edit');
