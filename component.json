@@ -3,7 +3,7 @@
   "repo": "adamsanderson/inline-edit",
   "description": "Simple inline editing",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["dom", "edit", "inline", "form"],
   "dependencies": {
     "component/event": "*"
   },
